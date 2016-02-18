@@ -20,5 +20,22 @@ describe('Test Controller', function () {
           done();
         });
     });
+	
+it('Should return Error', function (done) {
+
+      request(app)
+        .get('/test/1')
+        .expect('Content-Type', /json/)
+        .expect(200)
+        .expect(function (obj) {
+          console.log(obj.res.body);
+		  obj.res.body.content.result.should.be.equal('OK');
+        })
+        .end(function (err, res) {
+          if (err) throw err;
+          done();
+        });
+    });
+	
   });
 });
