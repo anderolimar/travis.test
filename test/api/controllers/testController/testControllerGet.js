@@ -16,8 +16,7 @@ describe('Test Controller', function () {
 		  obj.res.body.content.result.should.be.equal('OK');
         })
         .end(function (err, res) {
-          if (err) throw err;
-          done();
+          done(err);
         });
     });
 	
@@ -32,8 +31,7 @@ it('Should return Error', function (done) {
 		  obj.res.body.content.result.should.be.equal('OK');
         })
         .end(function (err, res) {
-          if (err) throw err;
-          done();
+          done(err);
         });
     });
 	
