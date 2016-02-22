@@ -18,7 +18,5 @@ console.log('Running tests...');
 
 mocha.run(function (failures) {
   process.on('exit', function () {
-    //console.log('exit - failures :' + failures);
-	//process.exit(failures);
   });
 });
