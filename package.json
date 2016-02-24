@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "test": "mocha --recursive",
+    "test": "mocha test --recursive",
     "start": "node start.js"
   },
   "description": "Customer",

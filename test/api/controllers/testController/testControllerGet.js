@@ -16,9 +16,24 @@ describe('Test Controller', function () {
 		  obj.res.body.content.result.should.be.equal('OK');
         })
         .end(function (err, res) {
-          if (err) throw err;
-          done();
+          done(err);
         });
     });
+	
+it('Should return Error', function (done) {
+
+      request(app)
+        .get('/test/1')
+        .expect('Content-Type', /json/)
+        .expect(404)
+        .expect(function (obj) {
+          console.log(obj.res.body);
+		  obj.res.body.message.should.be.equal('Not Found');
+        })
+        .end(function (err, res) {
+          done(err);
+        });
+    });
+	
   });
 });
