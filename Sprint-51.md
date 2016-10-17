@@ -7,7 +7,8 @@ TM-3621 : Catalog exporter should not call Customer when instance does not exist
 
 TM-3661 : Catalog CMS API
 
-TM-3678 : [GVPPLATF-31634] [CONTENTAPI] - SearchContent doesn't order by ascending release_date when these dates are negatives (in time stamp)
+TM-3678 : [GVPPLATF-31634] [CONTENTAPI] - SearchContent doesn't order by ascending release_date 
+when these dates are negatives (in time stamp)
 
 TM-3674 : Amadeus - Check username is already used before create
 
